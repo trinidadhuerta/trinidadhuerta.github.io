@@ -5,14 +5,32 @@
 <head>
   <meta charset="utf-8">
   <title>Trinidad Huerta</title>
-  <link rel="stylesheet" href="styles\style.css">
+  <link rel="stylesheet" href="styles\NavStyle.css">
 </head>
 
 <body>
-    <div>
+  <nav class="navbar">
+    
+    <div id="nav-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-    <!-- Include JQuery and Javascript file -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <a href="#" class="logo"> LOGO </a>
+
+    <ul class="main-nav" id="jq-menu">
+      <li><a href="#" class="nav-items"> Home </a></li>
+      <li><a href="#" class="nav-items"> Products </a></li>
+      <li><a href="#" class="nav-items"> About Us </a></li>
+      <li><a href="#" class="nav-items"> Contact Us </a></li>
+      <li><a href="#" class="nav-items"> Blog </a></li>
+    </ul>
+  </nav>
+
+  <!-- Include JQuery and Javascript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts\HeaderScript.js"></script>
+
 </body>
 </html>
