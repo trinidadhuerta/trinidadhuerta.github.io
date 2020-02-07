@@ -1,51 +1,59 @@
-* {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-}
-
-body {
-    font-family: 'Josefin sans', sans-serif;
-}
-
 .navbar{
-    font-size: 18px;
-    background-color: black;
+    font-size: 35px;
+    background-color: #ff5d4c;
+    margin-bottom: 10px; 
+}
+
+.main-navbar {
+  margin-bottom: 10px;
 }
 
 .main-nav {
     list-style-type: none;
+    
+    -webkit-tap-highlight-color: transparent;
+    background-color: #292f36;
+    min-height: 100vh;
 }
 
 .main-nav li {
-    text-align: center;
-    margin:15px auto;
+  background-color: #a1cda8;
+  width: 94%;
+  text-align: left;
+  margin: 10px auto;
+  padding: 50px;
 }
 
-
-.nav-items, .logo {
+.nav-items{
     text-decoration: none;
     color: white;
 }
 
 .logo {
+    text-decoration: none;
+    color: white;
+
     display: inline-block;
-    font-size: 22px;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 65px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 /* styling for the hamburger icon*/
 
 #nav-hamburger {    
     position: absolute; 
-    top: 10px;
-    right: 20px;
+    top: 25px;
+    right: 30px;
     width: 60px;
     height: 45px;
 
     cursor: pointer;
-    color: white; 
+    color: white;
+
+    -webkit-tap-highlight-color: transparent
+
 }
 
 #nav-hamburger span {
@@ -104,6 +112,7 @@ body {
   
   #nav-hamburger.open span:nth-child(2) {
     width: 0%;
+    top: 0px;
     opacity: 0;
   }
   
