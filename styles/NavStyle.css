@@ -1,127 +1,156 @@
-.navbar{
-    font-size: 35px;
-    background-color: #ff5d4c;
-    margin-bottom: 10px; 
+header {
+  position: fixed;
+  top: 0;
+  right:0;
+  left: 0;
+  z-index: 999;
+
+  width: 100%;
+
+  background-color: #ff5d4c;
+
+  padding: 10px 0;
 }
 
-.main-navbar {
-  margin-bottom: 10px;
+.header-inner {
+  padding: 0 12px;
 }
 
-.main-nav {
-    list-style-type: none;
-    
-    -webkit-tap-highlight-color: transparent;
-    background-color: #292f36;
-    min-height: 100vh;
+#logo {
+  display: block;
+  float: left;
+
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 24px;
+  color: white;
 }
 
-.main-nav li {
-  background-color: #a1cda8;
-  width: 94%;
-  text-align: left;
-  margin: 10px auto;
-  padding: 50px;
+
+/* HAMBURGER ICON AND ANIMATION CSS */
+
+#hamburger {
+  display: block;
+  float: right;
+
+  top: 25px;
+  width: 42px;
+  height: 39px;
+
+  cursor: pointer;
+  color: white;
+
+  padding: 5px 10px;
 }
 
-.nav-items{
-    text-decoration: none;
-    color: white;
+#hamburger span {
+  display:block;
+  height: 3px;
+
+  text-decoration: none;
+  background: white;
+  left:0;
+
+  margin-top: 4px;
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
 }
 
-.logo {
-    text-decoration: none;
-    color: white;
-
-    display: inline-block;
-    font-family: 'Mr Dafoe', cursive;
-    font-size: 65px;
-    margin-top: 10px;
-    margin-left: 30px;
+#hamburger span:nth-child(1) {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
-/* styling for the hamburger icon*/
-
-#nav-hamburger {    
-    position: absolute; 
-    top: 25px;
-    right: 30px;
-    width: 60px;
-    height: 45px;
-
-    cursor: pointer;
-    color: white;
-
-    -webkit-tap-highlight-color: transparent
-
+#hamburger.open span:nth-child(1) {
+  margin-top: 4px;
+  -webkit-transform: rotate(45deg) translate3d(5px,5px,0);
+  -moz-transform: rotate(45deg) translate3d(5px,5px,0);
+  -o-transform: rotate(45deg) translate3d(5px,5px,0);
+  transform: rotate(45deg) translate3d(5px,5px,0);
 }
 
-#nav-hamburger span {
-    display: block;
-    position: absolute;
-    height: 7px;
-    width: 100%;
-    
-    background: rgb(255, 255, 255);
-    left: 0;
 
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+#hamburger span:nth-child(2) {
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -o-transform-origin: left;
+  transform-origin: left;
+}
 
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -o-transition: .5s ease;
-    transition: .5s ease;
-  }
+#hamburger.open span:nth-child(2) {
+  margin-top: 0;
+  opacity: 0;
+}
 
+#hamburger span:nth-child(3) {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+#hamburger.open span:nth-child(3) {
+  margin-top: 8px;
+
+  -webkit-transform: rotate(-45deg) translate3d(5px,-5px,0);
+  -moz-transform: rotate(-45deg) translate3d(5px,-5px,0);
+  -o-transform: rotate(-45deg) translate3d(5px,-5px,0);
+  transform: rotate(-45deg) translate3d(5px,-5px,0);
+}
+
+/* POP-UP NAVIGATION MENU CSS */
+
+nav {
+  min-height: 100vh;
+  background-color: #2e2e2e;
+
+  padding: 100px 15px 10px;
   
-  #nav-hamburger span:nth-child(1) {
-    top: 0px;
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center;
-  }
-  
-  #nav-hamburger span:nth-child(2) {
-    top: 18px;
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center;
-  }
-  
-  #nav-hamburger span:nth-child(3) {
-    top: 36px;
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center;
-  }
-  
-  #nav-hamburger.open span:nth-child(1) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: -3px;
-    left: 8px;
-  }
-  
-  #nav-hamburger.open span:nth-child(2) {
-    width: 0%;
-    top: 0px;
-    opacity: 0;
-  }
-  
-  #nav-hamburger.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    top: 39px;
-    left: 8px;
-  }
+  visibility: visible;
+  opacity: 1;
 
+  -webkit-transition: .4s linear;
+  -moz-transition: .4s linear;
+  -o-transition: .4s linear;
+  transition: .4s linear;
+}
+
+.nav-list {
+  display: block;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.nav-list li {
+  display: block;
+
+  background-color: #7fa588;
+  color: white;
+
+  position: relative;
+  width: 100%;
+
+  padding: 18px 10px;
+  margin: 5px 0 0 0;
+
+  float: left;
+}
+
+.nav-list-item {
+  text-decoration: none !important;
+  color: white;
+}
+
+nav.open {
+  visibility: visible;
+  opacity: 1;
+}
