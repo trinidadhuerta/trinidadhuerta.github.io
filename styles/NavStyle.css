@@ -132,6 +132,7 @@ nav {
   padding: 100px 15px 10px;
 
   min-height: 100vh;
+  min-width: 100vw;
   background-color: #2e2e2e;
 
   visibility: hidden;
