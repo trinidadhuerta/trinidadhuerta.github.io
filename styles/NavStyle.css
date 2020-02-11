@@ -1,20 +1,36 @@
-header {
+#filler {
+  width:100%;
+  background-color: black;
+  height: 2000px;
+}
+
+.header-outer-wrapper {
   position: fixed;
   top: 0;
   right:0;
   left: 0;
   z-index: 999;
+}
 
+.header-inner-wrapper {
+  position: relative;
+  z-index: 1000;
   width: 100%;
+  overflow: auto;
 
+  background-color: transparent;
+  padding: 10px 8px 10px 15px;
+
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header-inner-wrapper.active {
   background-color: #ff5d4c;
-
-  padding: 10px 0;
 }
 
-.header-inner {
-  padding: 0 12px;
-}
 
 #logo {
   display: block;
@@ -110,11 +126,14 @@ header {
 /* POP-UP NAVIGATION MENU CSS */
 
 nav {
+  position: fixed;
+  top: 0;
+  z-index: 998;
+  padding: 100px 15px 10px;
+
   min-height: 100vh;
   background-color: #2e2e2e;
 
-  padding: 100px 15px 10px;
-  
   visibility: hidden;
   opacity: 0;
 
