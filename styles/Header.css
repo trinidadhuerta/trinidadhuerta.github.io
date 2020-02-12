@@ -1,10 +1,3 @@
-#filler {
-  width:100%;
-  background-color: whitesmoke;
-  height: 1000px;
-}
-
-
 .landing-area {
   height: 100vh;
   width: 100%;
@@ -46,7 +39,7 @@
 
   font-family: 'Mr Dafoe', cursive;
   font-size: 24px;
-  color: white;
+  color: whitesmoke;
 }
 
 
@@ -61,7 +54,7 @@
   height: 39px;
 
   cursor: pointer;
-  color: white;
+  color: whitesmoke;
 
   padding: 5px 10px;
 }
@@ -71,7 +64,7 @@
   height: 3px;
 
   text-decoration: none;
-  background: white;
+  background: whitesmoke;
   left:0;
 
   margin-top: 4px;
@@ -162,7 +155,7 @@ nav {
   display: block;
 
   background-color: #7fa588;
-  color: white;
+  color: whitesmoke;
 
   position: relative;
   width: 100%;
@@ -175,7 +168,7 @@ nav {
 
 .nav-list-item {
   text-decoration: none !important;
-  color: white;
+  color: whitesmoke;
 }
 
 nav.open {
