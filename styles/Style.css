@@ -14,6 +14,12 @@ html, body {
     -webkit-tap-highlight-color: transparent;
 }
 
+.main-content {
+    width:100%;
+    background-color: whitesmoke;
+    height: 1000px;
+}
+  
 ::-webkit-scrollbar {
     background-color: #fff;
     width: 4px;
