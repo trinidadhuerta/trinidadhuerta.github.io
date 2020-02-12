@@ -13,3 +13,15 @@ html, body {
     background-color: #2e2e2e;
     -webkit-tap-highlight-color: transparent;
 }
+
+::-webkit-scrollbar {
+    background-color: #fff;
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2e2e2e;
+
+    -webkit-border-radius: 6px;
+    border-radius: 50px;
+}
