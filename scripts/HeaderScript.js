@@ -1,3 +1,8 @@
+window.onbeforeunload = function () {
+	window.scrollTo(0, 0);
+}
+
+
 $(document).ready(function(){
 	
 	$('#hamburger').click(function(){
@@ -6,7 +11,7 @@ $(document).ready(function(){
 	});
 
 	$(window).scroll(function(){
-		var scrollPos = 200;
+		var scrollPos = 80;
 
 		if ($(document).scrollTop() >= scrollPos){
 			$('.header-inner-wrapper').addClass('active');
