@@ -11,13 +11,15 @@ $(document).ready(function(){
 	});
 
 	$(window).scroll(function(){
-		var scrollPos = 80;
+		var scrollPos = 60;
 
 		if ($(document).scrollTop() >= scrollPos){
 			$('.header-inner-wrapper').addClass('active');
+			$('.landing-area-overlay').addClass('active');
 		}
 		else if ($(document).scrollTop() < scrollPos) {
 			$('.header-inner-wrapper').removeClass('active');
+			$('.landing-area-overlay').removeClass('active');
 		}
 	});
 });
