@@ -2,9 +2,27 @@
   height: 100vh;
   width: 100%;
 
-  background-color: black;
+  background-image: url('../Images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15% 0%;
 }
 
+.landing-area-overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+
+  -webkit-transition: .75s linear;
+  -moz-transition: .75s linear;
+  -o-transition: .75s linear;
+  transition: .75s linear;
+}
+
+.landing-area-overlay.active {
+  background-color: whitesmoke;
+}
 .header-outer-wrapper {
   position: fixed;
   top: 0;
@@ -22,14 +40,14 @@
   background-color: transparent;
   padding: 10px 8px 10px 15px;
 
-  -webkit-transition: .3s linear;
-  -moz-transition: .3s linear;
-  -o-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: .75s linear;
+  -moz-transition: .75s linear;
+  -o-transition: .75s linear;
+  transition: .75s linear;
 }
 
 .header-inner-wrapper.active {
-  background-color: #ff5d4c;
+  background-color: #45a29e;
 }
 
 
