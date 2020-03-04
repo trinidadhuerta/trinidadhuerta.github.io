@@ -6,7 +6,6 @@
     display: flex;    
     align-items: center;
     -webkit-box-align: center;
-    position: relative;
 
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -16,7 +15,6 @@
 
     transition-property: color, background-color;
     transition-duration: 0.6s;
-
 }
 
 #portfolio-header.active {
@@ -35,7 +33,43 @@
     font-family: 'Anton', sans-serif;
 }
 
-.line {
+.line{
     line-height: 0.9;
     font-size: 11vw;
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp{
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(300%);
+        transform: translateY(300%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes fadeInUp{
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(300%);
+        transform: translateY(300%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
 }
