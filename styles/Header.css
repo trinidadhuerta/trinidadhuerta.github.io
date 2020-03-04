@@ -1,195 +1,41 @@
-.landing-area {
-  height: 100vh;
-  width: 100%;
+.portfolio {
 
-  background-image: url('../Images/hero-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 15% 0%;
 }
 
-.landing-area-overlay {
-  height: 100vh;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
+#portfolio-header {
+    display: flex;    
+    align-items: center;
+    -webkit-box-align: center;
+    position: relative;
 
-  -webkit-transition: .75s linear;
-  -moz-transition: .75s linear;
-  -o-transition: .75s linear;
-  transition: .75s linear;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    height: calc(100vh - 60px);
+    min-height: 550px;
+
+    transition-property: color, background-color;
+    transition-duration: 0.6s;
+
 }
 
-.landing-area-overlay.active {
-  background-color: whitesmoke;
-}
-.header-outer-wrapper {
-  position: fixed;
-  top: 0;
-  right:0;
-  left: 0;
-  z-index: 999;
+#portfolio-header.active {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
 }
 
-.header-inner-wrapper {
-  position: relative;
-  z-index: 1000;
-  width: 100%;
-  overflow: auto;
+.pheader-title {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 95rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
 
-  background-color: transparent;
-  padding: 10px 8px 10px 15px;
-
-  -webkit-transition: .75s linear;
-  -moz-transition: .75s linear;
-  -o-transition: .75s linear;
-  transition: .75s linear;
+    font-family: 'Anton', sans-serif;
 }
 
-.header-inner-wrapper.active {
-  background-color: #45a29e;
-}
-
-
-#logo {
-  display: block;
-  float: left;
-
-  font-family: 'Mr Dafoe', cursive;
-  font-size: 24px;
-  color: whitesmoke;
-}
-
-
-/* HAMBURGER ICON AND ANIMATION CSS */
-
-#hamburger {
-  display: block;
-  float: right;
-
-  top: 25px;
-  width: 42px;
-  height: 39px;
-
-  cursor: pointer;
-  color: whitesmoke;
-
-  padding: 5px 10px;
-}
-
-#hamburger span {
-  display:block;
-  height: 3px;
-
-  text-decoration: none;
-  background: whitesmoke;
-  left:0;
-
-  margin-top: 4px;
-
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
-}
-
-#hamburger span:nth-child(1) {
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-
-#hamburger.open span:nth-child(1) {
-  margin-top: 4px;
-  -webkit-transform: rotate(45deg) translate3d(5px,5px,0);
-  -moz-transform: rotate(45deg) translate3d(5px,5px,0);
-  -o-transform: rotate(45deg) translate3d(5px,5px,0);
-  transform: rotate(45deg) translate3d(5px,5px,0);
-}
-
-
-#hamburger span:nth-child(2) {
-  -webkit-transform-origin: left;
-  -moz-transform-origin: left;
-  -o-transform-origin: left;
-  transform-origin: left;
-}
-
-#hamburger.open span:nth-child(2) {
-  margin-top: 0;
-  opacity: 0;
-}
-
-#hamburger span:nth-child(3) {
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-
-#hamburger.open span:nth-child(3) {
-  margin-top: 8px;
-
-  -webkit-transform: rotate(-45deg) translate3d(5px,-5px,0);
-  -moz-transform: rotate(-45deg) translate3d(5px,-5px,0);
-  -o-transform: rotate(-45deg) translate3d(5px,-5px,0);
-  transform: rotate(-45deg) translate3d(5px,-5px,0);
-}
-
-/* POP-UP NAVIGATION MENU CSS */
-
-nav {
-  position: fixed;
-  top: 0;
-  z-index: 998;
-  padding: 100px 15px 10px;
-
-  min-height: 100vh;
-  min-width: 100vw;
-  background-color: #2e2e2e;
-
-  visibility: hidden;
-  opacity: 0;
-
-  -webkit-transition: .4s linear;
-  -moz-transition: .4s linear;
-  -o-transition: .4s linear;
-  transition: .4s linear;
-}
-
-.nav-list {
-  display: block;
-  list-style-type: none;
-  font-size: 18px;
-}
-
-.nav-list li {
-  display: block;
-
-  background-color: #7fa588;
-  color: whitesmoke;
-
-  position: relative;
-  width: 100%;
-
-  padding: 18px 10px;
-  margin: 5px 0 0 0;
-
-  float: left;
-}
-
-.nav-list-item {
-  text-decoration: none !important;
-  color: whitesmoke;
-}
-
-nav.open {
-  visibility: visible;
-  opacity: 1;
+.line {
+    line-height: 0.9;
+    font-size: 11vw;
 }
