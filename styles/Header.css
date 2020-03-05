@@ -189,7 +189,7 @@ PORTFOLIO BANNER
 SCROLL ICON
 */
 
-.scroll-down {
+#scroll-down {
     margin-top: 5rem;
     display: block;
     padding: 20px 100px;
@@ -197,12 +197,14 @@ SCROLL ICON
 
 
 .scroll-icon {
-    width: 3px;
+    width: 2.2px;
     height: 2rem;
     border-radius: 25%;
     background-color: black;
     animation-name: scroll;
     animation-duration: 2.2s;
+    animation-fill-mode: both;
+    animation-delay: 1.8s;
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
     animation-iteration-count: infinite;
 }
@@ -215,8 +217,20 @@ SCROLL ICON
         opacity: 1; 
     }
     100% { 
-        transform: translateY(3rem);
+        transform: translateY(2.7rem);
         opacity: 0;
     }
 }
 
+@-webkit-keyframes scroll {
+    0% { 
+        opacity: 0; 
+    }
+    10% { 
+        opacity: 1; 
+    }
+    100% { 
+        transform: translateY(2.7rem);
+        opacity: 0;
+    }
+}
