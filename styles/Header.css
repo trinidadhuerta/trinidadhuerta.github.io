@@ -1,6 +1,54 @@
-.portfolio {
 
+/*
+STICKY HEADER
+*/
+
+#sticky {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    width: 100%;
+    padding: 0rem 1.25rem;
+
+    color: rgb(0, 0, 0);
 }
+
+.top-bar-container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.flex-container {
+    font-family: 'Saira Stencil One', cursive;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-left {
+}
+
+.top-bar-right {
+}
+
+#logo {
+    font-size: 10vw;
+}
+
+#name {
+    font-size: 4vw;
+    display: inline-block;
+}
+
+#about {
+    font-size: 4vw;
+}
+
+/*
+PORTFOLIO BANNER
+*/
 
 #portfolio-header {
     display: flex;    
@@ -42,6 +90,14 @@
     animation-duration: 2s;
     animation-delay: 0.6s;
     animation-fill-mode: both;
+}
+
+.animated.delay-p8 {
+    animation-delay: 0.8s;
+}
+
+.animated.delay-p10 {
+    animation-delay: 1.0s;
 }
 
 @keyframes fadeInUp{
