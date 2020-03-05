@@ -5,45 +5,69 @@ STICKY HEADER
 
 #sticky {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
 
-    width: 100%;
     padding: 0rem 1.25rem;
 
     color: rgb(0, 0, 0);
+    z-index: 999;
+
+    transition-property: color;
+    transition-duration: 0.6s;
+
+    background-color: transparent;
+}
+
+#sticky.active {
+    color: rgb(255, 255, 255);
 }
 
 .top-bar-container{
+    position: relative;
+    overflow: auto;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
+
     width: 100%;
+    z-index: 1000;
+
+    font-family: 'Saira Stencil One', cursive;
 }
 
 .flex-container {
-    font-family: 'Saira Stencil One', cursive;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.top-bar-left {
     display: flex;
     align-items: center;
 }
 
-.top-bar-left {
-}
-
 .top-bar-right {
+
+    margin-left: auto;
 }
 
 #logo {
     font-size: 10vw;
+    padding-right: .50rem;
 }
 
 #name {
-    font-size: 4vw;
-    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    letter-spacing: 0.10rem;
 }
 
 #about {
-    font-size: 4vw;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    letter-spacing: 0.37rem;
 }
 
 /*
