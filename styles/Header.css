@@ -256,13 +256,13 @@ CONTENT CODE
 
     margin-top: -3.75rem;
     
-    border: 2px solid blue;
-    
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
 }
 
 .grid-item {
-    background-color: rgb(63, 63, 63);
-    height: 100px;
-    width: 100px;
+    background-color: rgb(29, 29, 29);
+    height: 150px;
+    width: 100%;
 }
