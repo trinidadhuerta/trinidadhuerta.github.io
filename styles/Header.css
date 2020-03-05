@@ -234,3 +234,24 @@ SCROLL ICON
         opacity: 0;
     }
 }
+
+/* 
+CONTENT CODE 
+*/
+
+#content {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    height: 2000px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-item {
+
+}
