@@ -4,9 +4,11 @@ $(document).ready(function(){
 
 		if ($(document).scrollTop() >= scrollPos){
 			$('#portfolio-header').addClass('active');
+			$('#sticky').addClass('active');
 		}
 		else if ($(document).scrollTop() < scrollPos) {
 			$('#portfolio-header').removeClass('active');
+			$('#sticky').removeClass('active');
 		}
 	});
 });
