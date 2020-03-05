@@ -219,7 +219,7 @@ SCROLL ICON
         opacity: 1; 
     }
     100% { 
-        transform: translateY(2.7rem);
+        transform: translateY(60%);
         opacity: 0;
     }
 }
@@ -232,7 +232,7 @@ SCROLL ICON
         opacity: 1; 
     }
     100% { 
-        transform: translateY(2.7rem);
+        transform: translateY(60%);
         opacity: 0;
     }
 }
@@ -253,11 +253,12 @@ CONTENT CODE
 .grid-container {
     display: grid;
     width: 100%;
-    grid-template-columns: auto auto;
-    margin-top: -3.75rem;
-    border: 2px solid blue;
 
-    align-items: center;
+    margin-top: -3.75rem;
+    
+    border: 2px solid blue;
+    
+    grid-template-columns: auto auto;
 }
 
 .grid-item {
