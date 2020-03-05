@@ -190,6 +190,7 @@ SCROLL ICON
 */
 
 #scroll-down {
+    display: inline-block;
     margin-top: 5rem;
     display: block;
     padding: 20px 100px;
@@ -197,6 +198,7 @@ SCROLL ICON
 
 
 .scroll-icon {
+    display: inline-block;
     width: 2.2px;
     height: 2rem;
     border-radius: 25%;
@@ -250,8 +252,16 @@ CONTENT CODE
 
 .grid-container {
     display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    margin-top: -3.75rem;
+    border: 2px solid blue;
+
+    align-items: center;
 }
 
 .grid-item {
-
+    background-color: red;
+    height: 100px;
+    width: 100px;
 }
