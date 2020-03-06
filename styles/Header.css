@@ -200,7 +200,7 @@ SCROLL ICON
     display: inline-block;
     width: 2.2px;
     height: 2rem;
-    border-radius: 25%;
+    border-radius: 35%;
     background-color: black;
     animation-name: scroll;
     animation-duration: 2.2s;
@@ -237,16 +237,15 @@ SCROLL ICON
 }
 
 /* 
-CONTENT CODE 
+PORTFOLIO 
 */
 
-#content {
+#projects {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: 1.25rem;
     padding-left: 1.25rem;
-    height: 2000px;
 }
 
 .grid-container {
@@ -265,3 +264,51 @@ CONTENT CODE
     height: 150px;
     width: 100%;
 }
+
+#contact {
+    font-family: 'Oswald', sans-serif;
+
+    
+    height: 2000px;
+
+    width: 100%;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+
+}
+
+#contact p {
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 5vh;
+}
+
+@supports (-webkit-text-stroke: .3px white) {
+    #contact p {
+      -webkit-text-stroke: .3px white;
+      -webkit-text-fill-color: transparent;
+      font-size: 2.5rem;
+      letter-spacing: 0.3rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 5vh;
+    }
+  }
+
+  /*
+  CONTACT ME 
+  */
+
+  .icon-row {
+    text-align: center;
+  }
+
+  .icon-row-item {
+    display: inline-block;
+  }
