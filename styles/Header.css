@@ -190,9 +190,8 @@ SCROLL ICON
 */
 
 #scroll-down {
-    display: inline-block;
-    margin-top: 5rem;
-    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 20px 100px;
 }
 
