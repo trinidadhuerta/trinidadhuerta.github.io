@@ -306,9 +306,12 @@ PORTFOLIO
   */
 
   .icon-row {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 3vh;
   }
 
   .icon-row-item {
-    display: inline-block;
+   
   }
