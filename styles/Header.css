@@ -193,47 +193,36 @@ SCROLL ICON
     margin-top: auto;
     margin-bottom: auto;
     padding: 20px 100px;
+    line-height: 0.5px;
 }
 
 
-.scroll-icon {
-    display: inline-block;
-    width: 2.2px;
-    height: 2rem;
-    border-radius: 35%;
-    background-color: black;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-fill-mode: both;
-    animation-delay: 1.8s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-    animation-iteration-count: infinite;
+.arrow {
+    width: 5vw;
+    height: 5vw;
+    border: 2.5vw solid;
+    border-color: transparent transparent black black;
+    background-color: transparent;
+    padding: 1.8vw;
+    transform: rotate(-45deg);
 }
 
-@keyframes scroll {
-    0% { 
-        opacity: 0; 
-    }
-    10% { 
-        opacity: 1; 
-    }
-    100% { 
-        transform: translateY(70%);
-        opacity: 0;
-    }
+.slide-container {
+    -webkit-animation: slide 4s linear infinite; 
+    animation: slide 4s linear infinite;
 }
 
-@-webkit-keyframes scroll {
-    0% { 
-        opacity: 0; 
-    }
-    10% { 
-        opacity: 1; 
-    }
-    100% { 
-        transform: translateY(70%);
-        opacity: 0;
-    }
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateY(-12vw); }	
+   20% { opacity:1; transform: translateY(-6vw); }	
+   80% { opacity:1; transform: translateY(6vw); }	
+  100% { opacity:0; transform: translateY(12vw); }	
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateY(-12vw); }	
+   20% { opacity:1; transform: translateY(-6vw); }	
+   80% { opacity:1; transform: translateY(6vw); }	
+  100% { opacity:0; transform: translateY(12vw); }	
 }
 
 /* 
