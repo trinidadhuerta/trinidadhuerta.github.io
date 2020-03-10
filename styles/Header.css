@@ -154,6 +154,10 @@ PORTFOLIO BANNER
     animation-delay: 1.0s;
 }
 
+.delay2s {
+    animation-delay: 2.0s;
+}
+
 @keyframes fadeInUp{
     from {
         opacity: 0;
@@ -203,29 +207,40 @@ SCROLL ICON
     border-color: transparent transparent black black;
     background-color: transparent;
     padding: 1.8vw;
-    transform: rotate(-45deg);
+    transform: rotate(-90deg);
+    margin-top: -.8rem;
 }
 
-.arrow::nth-child(2) {
-    border-color: transparent transparent red red;
-}
 
 .slide-container {
-    -webkit-animation: slide 4s linear infinite;
-    animation: slide 4s linear infinite;
+    position: relative;
+
+    animation-name: slide-and-fade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes slide {
-    0% { opacity:0; transform: translateY(-15vw); }	
-   20% { opacity:1; transform: translateY(-9vw); }	
-   80% { opacity:1; transform: translateY(9vw); }	
-  100% { opacity:0; transform: translateY(15vw); }	
+.slide-container.delay2 {
+    animation-delay: -.2s;
 }
-@keyframes slide {
-    0% { opacity:0; transform: translateY(-15vw); }	
-   20% { opacity:1; transform: translateY(-9vw); }	
-   80% { opacity:1; transform: translateY(9vw); }	
-  100% { opacity:0; transform: translateY(15vw); }	
+
+.slide-container.delay3 {
+    animation-delay: -.4s;
+}
+
+@keyframes slide-and-fade {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-1.3rem,-1.3rem);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(1.3rem,1.3rem);
+    }
 }
 
 /* 
