@@ -223,7 +223,7 @@ SCROLL ICON
     padding: 1.8vw;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    margin-top: -1.2rem;
+    margin-top: -.8rem;
 }
 
 
@@ -241,16 +241,16 @@ SCROLL ICON
     -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
+
+
 }
 
 .slide-container.delay2 {
-    animation-delay: -.2s;
-    -webkit-animation-delay: -.2s;
+
 }
 
 .slide-container.delay3 {
-    animation-delay: -.4s;
-    -webkit-animation-delay: -.4s;
+
 }
 
 
