@@ -223,7 +223,7 @@ SCROLL ICON
     padding: 1.8vw;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    margin-top: -1.2rem;
+    margin-top: -.9rem;
 }
 
 
@@ -255,32 +255,32 @@ SCROLL ICON
 @keyframes slide-and-fade {
     0%{
         opacity: 0;
-        transform: translateY(-1.3rem);
-        -webkit-transform: translateY(-1.3rem);
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
     }
     50%{
         opacity: 1;
     }
     100%{
         opacity: 0;
-        transform: translateY(1.3rem);
-        -webkit-transform: translateY(1.3rem);
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
     }
 }
 
 @-webkit-keyframes slide-and-fade {
     0%{
         opacity: 0;
-        transform: translateY(-1.3rem);
-        -webkit-transform: translateY(-1.3rem);
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
     }
     50%{
         opacity: 1;
     }
     100%{
         opacity: 0;
-        transform: translateY(1.3rem);
-        -webkit-transform: translateY(1.3rem);
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
     }
 }
 
