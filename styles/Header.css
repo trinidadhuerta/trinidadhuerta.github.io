@@ -193,7 +193,6 @@ SCROLL ICON
     margin-top: auto;
     margin-bottom: auto;
     padding: 20px 100px;
-    line-height: 0.5px;
 }
 
 
@@ -207,22 +206,26 @@ SCROLL ICON
     transform: rotate(-45deg);
 }
 
+.arrow::nth-child(2) {
+    border-color: transparent transparent red red;
+}
+
 .slide-container {
-    -webkit-animation: slide 4s linear infinite; 
+    -webkit-animation: slide 4s linear infinite;
     animation: slide 4s linear infinite;
 }
 
 @-webkit-keyframes slide {
-    0% { opacity:0; transform: translateY(-12vw); }	
-   20% { opacity:1; transform: translateY(-6vw); }	
-   80% { opacity:1; transform: translateY(6vw); }	
-  100% { opacity:0; transform: translateY(12vw); }	
+    0% { opacity:0; transform: translateY(-15vw); }	
+   20% { opacity:1; transform: translateY(-9vw); }	
+   80% { opacity:1; transform: translateY(9vw); }	
+  100% { opacity:0; transform: translateY(15vw); }	
 }
 @keyframes slide {
-    0% { opacity:0; transform: translateY(-12vw); }	
-   20% { opacity:1; transform: translateY(-6vw); }	
-   80% { opacity:1; transform: translateY(6vw); }	
-  100% { opacity:0; transform: translateY(12vw); }	
+    0% { opacity:0; transform: translateY(-15vw); }	
+   20% { opacity:1; transform: translateY(-9vw); }	
+   80% { opacity:1; transform: translateY(9vw); }	
+  100% { opacity:0; transform: translateY(15vw); }	
 }
 
 /* 
