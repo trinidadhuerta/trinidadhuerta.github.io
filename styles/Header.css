@@ -231,11 +231,13 @@ SCROLL ICON
     position: relative;
 
     animation-name: slide-and-fade;
+    animation-fill-mode: both;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
     -webkit-animation-name: slide-and-fade;
+    -webkit-animation-fill-mode: both;
     -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
@@ -255,32 +257,32 @@ SCROLL ICON
 @keyframes slide-and-fade {
     0%{
         opacity: 0;
-        transform: translateY(-20px);
-        -webkit-transform: translateY(-20px);
+        transform: translateY(-80%);
+        -webkit-transform: translateY(-80%);
     }
     50%{
         opacity: 1;
     }
     100%{
         opacity: 0;
-        transform: translateY(20px);
-        -webkit-transform: translateY(20px);
+        transform: translateY(80%);
+        -webkit-transform: translateY(80%);
     }
 }
 
 @-webkit-keyframes slide-and-fade {
     0%{
         opacity: 0;
-        transform: translateY(-20px);
-        -webkit-transform: translateY(-20px);
+        transform: translateY(-80%);
+        -webkit-transform: translateY(-80%);
     }
     50%{
         opacity: 1;
     }
     100%{
         opacity: 0;
-        transform: translateY(20px);
-        -webkit-transform: translateY(20px);
+        transform: translateY(80%);
+        -webkit-transform: translateY(80%);
     }
 }
 
