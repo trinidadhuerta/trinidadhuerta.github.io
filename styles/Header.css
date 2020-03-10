@@ -233,12 +233,14 @@ SCROLL ICON
     animation-name: slide-and-fade;
     animation-fill-mode: both;
     animation-duration: 2s;
+    animation-delay: 2.2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
     -webkit-animation-name: slide-and-fade;
     -webkit-animation-fill-mode: both;
     -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 2.2s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
 
@@ -285,6 +287,21 @@ SCROLL ICON
         -webkit-transform: translateY(80%);
     }
 }
+
+
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateY(-15vw); }	
+   20% { opacity:1; transform: translateY(-9vw); }	
+   80% { opacity:1; transform: translateY(9vw); }	
+  100% { opacity:0; transform: translateY(15vw); }	
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateY(-15vw); }	
+   20% { opacity:1; transform: translateY(-9vw); }	
+   80% { opacity:1; transform: translateY(9vw); }	
+  100% { opacity:0; transform: translateY(15vw); }	
+}
+
 
 /* 
 PORTFOLIO 
