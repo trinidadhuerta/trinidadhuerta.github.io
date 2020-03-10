@@ -60,12 +60,14 @@ STICKY HEADER
 
 #name {
     font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     font-size: .875rem;
     letter-spacing: 0.10rem;
 }
 
 #about {
     font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     font-size: .875rem;
     letter-spacing: 0.3rem;
 }
@@ -207,7 +209,7 @@ SCROLL ICON
     border-color: transparent transparent black black;
     background-color: transparent;
     padding: 1.8vw;
-    transform: rotate(-90deg);
+    transform: rotate(-45deg);
     margin-top: -.8rem;
 }
 
@@ -219,27 +221,53 @@ SCROLL ICON
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
+    -webkit-animation-name: slide-and-fade;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
 }
 
 .slide-container.delay2 {
     animation-delay: -.2s;
+    -webkit-animation-delay: -.2s;
 }
 
 .slide-container.delay3 {
     animation-delay: -.4s;
+    -webkit-animation-delay: -.4s;
 }
+
 
 @keyframes slide-and-fade {
     0%{
         opacity: 0;
-        transform: rotate(45deg) translate(-1.3rem,-1.3rem);
+        transform: translateY(-1.3rem);
+        -webkit-transform: translateY(-1.3rem);
     }
     50%{
         opacity: 1;
     }
     100%{
         opacity: 0;
-        transform: rotate(45deg) translate(1.3rem,1.3rem);
+        transform: translateY(1.3rem);
+        -webkit-transform: translateY(1.3rem);
+    }
+}
+
+@-webkit-keyframes slide-and-fade {
+    0%{
+        opacity: 0;
+        transform: translateY(-1.3rem);
+        -webkit-transform: translateY(-1.3rem);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(1.3rem);
+        -webkit-transform: translateY(1.3rem);
     }
 }
 
