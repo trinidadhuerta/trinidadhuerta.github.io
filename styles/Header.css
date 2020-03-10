@@ -247,15 +247,6 @@ SCROLL ICON
 
 }
 
-.slide-container.delay2 {
-
-}
-
-.slide-container.delay3 {
-
-}
-
-
 @keyframes slide-and-fade {
     0%{
         opacity: 0;
@@ -287,21 +278,6 @@ SCROLL ICON
         -webkit-transform: translateY(80%);
     }
 }
-
-
-@-webkit-keyframes slide {
-    0% { opacity:0; transform: translateY(-15vw); }	
-   20% { opacity:1; transform: translateY(-9vw); }	
-   80% { opacity:1; transform: translateY(9vw); }	
-  100% { opacity:0; transform: translateY(15vw); }	
-}
-@keyframes slide {
-    0% { opacity:0; transform: translateY(-15vw); }	
-   20% { opacity:1; transform: translateY(-9vw); }	
-   80% { opacity:1; transform: translateY(9vw); }	
-  100% { opacity:0; transform: translateY(15vw); }	
-}
-
 
 /* 
 PORTFOLIO 
@@ -375,6 +351,6 @@ PORTFOLIO
   .icon-row {
     display: flex;
     justify-content: space-around;
-
+    flex-wrap: wrap;
     margin-bottom: 3vh;
   }
